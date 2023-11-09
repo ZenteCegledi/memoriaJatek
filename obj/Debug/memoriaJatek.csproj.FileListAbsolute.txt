@@ -1,0 +1,11 @@
+C:\Users\Madai Bálint\Desktop\Programozás\Dialógusok\MemoriaJatek\memoriaJatek\bin\Debug\memoriaJatek.exe.config
+C:\Users\Madai Bálint\Desktop\Programozás\Dialógusok\MemoriaJatek\memoriaJatek\bin\Debug\memoriaJatek.exe
+C:\Users\Madai Bálint\Desktop\Programozás\Dialógusok\MemoriaJatek\memoriaJatek\bin\Debug\memoriaJatek.pdb
+C:\Users\Madai Bálint\Desktop\Programozás\Dialógusok\MemoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.csproj.AssemblyReference.cache
+C:\Users\Madai Bálint\Desktop\Programozás\Dialógusok\MemoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.Properties.Resources.resources
+C:\Users\Madai Bálint\Desktop\Programozás\Dialógusok\MemoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.Settings.resources
+C:\Users\Madai Bálint\Desktop\Programozás\Dialógusok\MemoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.csproj.GenerateResource.cache
+C:\Users\Madai Bálint\Desktop\Programozás\Dialógusok\MemoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.csproj.CoreCompileInputs.cache
+C:\Users\Madai Bálint\Desktop\Programozás\Dialógusok\MemoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.exe
+C:\Users\Madai Bálint\Desktop\Programozás\Dialógusok\MemoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.pdb
+C:\Users\Madai Bálint\Desktop\Programozás\Dialógusok\MemoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.Form1.resources
