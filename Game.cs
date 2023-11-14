@@ -61,7 +61,7 @@ namespace memoriaJatek
             {
                 for(int j = 0; j <= parokSzama * 2 / 3 ; j++)
                 {
-                    if(!(poziciok.Count == 0))
+                    if(poziciok.Count > 0)
                     {
                         if (szamjegyekSzama == 1)
                         {
@@ -71,13 +71,7 @@ namespace memoriaJatek
                         {
                             labelElhelyezes(10, 99);
                         }
-                    }
-                    else
-                    {
-                        break;
-                    }
-                    
-                    
+                    }              
                 }
             }
         }
