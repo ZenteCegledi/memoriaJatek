@@ -9,3 +9,4 @@ C:\Users\Madai Bálint\Desktop\Programozás\Dialógusok\MemoriaJatek\memoriaJate
 C:\Users\Madai Bálint\Desktop\Programozás\Dialógusok\MemoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.exe
 C:\Users\Madai Bálint\Desktop\Programozás\Dialógusok\MemoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.pdb
 C:\Users\Madai Bálint\Desktop\Programozás\Dialógusok\MemoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.Form1.resources
+C:\Users\Madai Bálint\Desktop\Programozás\Dialógusok\MemoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.Game.resources

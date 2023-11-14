@@ -22,7 +22,6 @@ namespace memoriaJatek
             masodperc10.Checked = true;
             masodperc5.Enabled = true;
             masodperc20.Enabled = false;
-            allRequiredIsChecked();
         }
 
         private void par9_CheckedChanged(object sender, EventArgs e)
@@ -30,33 +29,53 @@ namespace memoriaJatek
             masodperc10.Checked = true;
             masodperc5.Enabled = false;
             masodperc20.Enabled = true;
-            allRequiredIsChecked();
         }
 
-        private bool allRequiredIsChecked()
-        {
-            if(par6.Checked == true || par9.Checked == true)
+        public int parokSzama {
+            get
             {
-                if(masodperc5.Checked == true || masodperc20.Checked == true || masodperc10.Checked == true)
+                if(par6.Checked == true)
                 {
-                    if(egyjegyu.Checked == true || ketjegyu.Checked == true)
-                    {
-                        return true;
-                    }
+                    return 6;
+                }
+                else
+                {
+                    return 9;
+                }
+            }     
+        }
+
+        public int masodpercekSzama
+        {
+            get
+            {
+                if (masodperc5.Checked == true)
+                {
+                    return 5;
+                }
+                else if (masodperc10.Checked == true)
+                {
+                    return 10;
+                }
+                else
+                {
+                    return 20;
                 }
             }
-            return false;
         }
 
-        private void ChangedRequired(object sender, EventArgs e)
+        public int szamjegyekSzama
         {
-            if (allRequiredIsChecked())
+            get
             {
-                Kezdes.Enabled = true;
-            }
-            else
-            {
-                Kezdes.Enabled = false;
+                if (egyjegyu.Checked == true)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return 2;
+                }
             }
         }
     }
