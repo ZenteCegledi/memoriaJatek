@@ -20,6 +20,7 @@ namespace memoriaJatek
         int szamjegyekSzama;
         int zoldekSzama = 0;
         int kartyaSzam = 0;
+        int probalkozasokSzama;
         List<Point> poziciok = new List<Point>();
         int tmpX = 50;
         int tmpY = 50;
@@ -40,11 +41,13 @@ namespace memoriaJatek
             this.masodpercekSzama = masodpercekSzama;
             this.szamjegyekSzama = szamjegyekSzama;
 
+            probalkozasokSzama = parokSzama;
+
             kartyaSzam = parokSzama * 2;
 
             ablakMeretBeallit(kartyaSzam);
 
-            for(int i = 1; i <= kartyaSzam; i++)
+            for (int i = 1; i <= kartyaSzam; i++)
             {
                 poziciok.Add(new Point(tmpX, tmpY));
 
@@ -52,7 +55,7 @@ namespace memoriaJatek
                 {
                     tmpX = 50;
                     tmpY += 100;
-                }                
+                }
                 else
                 {
                     tmpX += 100;
@@ -62,11 +65,11 @@ namespace memoriaJatek
 
         private void Game_Load(object sender, EventArgs e)
         {
-            for(int i = 0; i < 3; i++)
+            for (int i = 0; i < 3; i++)
             {
-                for(int j = 0; j <= parokSzama * 2 / 3 ; j++)
+                for (int j = 0; j <= parokSzama * 2 / 3; j++)
                 {
-                    if(poziciok.Count > 0)
+                    if (poziciok.Count > 0)
                     {
                         if (szamjegyekSzama == 1)
                         {
@@ -76,10 +79,11 @@ namespace memoriaJatek
                         {
                             labelElhelyezes(10, 99);
                         }
-                    }              
+                    }
                 }
             }
             felforditOsszes();
+            probalkozasSzamGeneralas();
         }
 
         public void labelElhelyezes(int min, int max)
@@ -99,6 +103,31 @@ namespace memoriaJatek
 
             marGeneraltSzamok.Add(randomSzam);
 
+
+        }
+
+        public void probalkozasSzamGeneralas()
+        {
+            probaLabel.Text = "Hátralévő próbálkozások száma: " + probalkozasokSzama;
+            probaLabel.Font = new Font("Arial", 16);
+            if (parokSzama == 6) { 
+            probaLabel.Location = new Point(70, 360);
+            } else
+            {
+                probaLabel.Location = new Point(165, 360);
+            }
+
+        }
+
+        public void probalkozasLevonas()
+        {
+            probalkozasokSzama--;
+            probaLabel.Text = "Hátralévő próbálkozások száma: " + probalkozasokSzama;
+            if (probalkozasokSzama == 0 && zoldekSzama != parokSzama)
+            {
+                probaLabel.ForeColor = Color.Red;
+                MessageBox.Show("Elfogytak a lehetőségeid!\nA megtalált párok száma: " + (parokSzama - zoldekSzama));
+            }
         }
 
         public void labelKeszit(int randomPozicioIndex, int randomSzam)
@@ -152,6 +181,7 @@ namespace memoriaJatek
                         MessageBox.Show("Gratulálunk!\nSikeresen végig játszottad a játékot!");
                     }
                 }
+                probalkozasLevonas();
                 forditottKartyak.Clear();
             }
             
