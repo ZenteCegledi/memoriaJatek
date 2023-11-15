@@ -18,6 +18,7 @@ namespace memoriaJatek
         int parokSzama;
         int masodpercekSzama;
         int szamjegyekSzama;
+        int zoldekSzama = 0;
         int kartyaSzam = 0;
         List<Point> poziciok = new List<Point>();
         int tmpX = 50;
@@ -144,6 +145,12 @@ namespace memoriaJatek
                     forditottKartyak[1].BackColor = Color.Green;
                     forditottKartyak[0].Enabled = false;
                     forditottKartyak[1].Enabled = false;
+                    zoldekSzama++;
+                    sw.Restart();
+                    if (zoldekSzama == parokSzama)
+                    {
+                        MessageBox.Show("Gratulálunk!\nSikeresen végig játszottad a játékot!");
+                    }
                 }
                 forditottKartyak.Clear();
             }
