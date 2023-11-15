@@ -10,3 +10,16 @@ C:\Users\Madai Bálint\Desktop\Programozás\Dialógusok\MemoriaJatek\memoriaJate
 C:\Users\Madai Bálint\Desktop\Programozás\Dialógusok\MemoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.pdb
 C:\Users\Madai Bálint\Desktop\Programozás\Dialógusok\MemoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.Form1.resources
 C:\Users\Madai Bálint\Desktop\Programozás\Dialógusok\MemoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.Game.resources
+C:\Users\Cegledi_Zente_Hollo\Desktop\shared\dev\csharp\orai\memoriaJatek\memoriaJatek\bin\Debug\memoriaJatek.exe.config
+C:\Users\Cegledi_Zente_Hollo\Desktop\shared\dev\csharp\orai\memoriaJatek\memoriaJatek\bin\Debug\memoriaJatek.exe
+C:\Users\Cegledi_Zente_Hollo\Desktop\shared\dev\csharp\orai\memoriaJatek\memoriaJatek\bin\Debug\memoriaJatek.pdb
+C:\Users\Cegledi_Zente_Hollo\Desktop\shared\dev\csharp\orai\memoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.csproj.AssemblyReference.cache
+C:\Users\Cegledi_Zente_Hollo\Desktop\shared\dev\csharp\orai\memoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cegledi_Zente_Hollo\Desktop\shared\dev\csharp\orai\memoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.Form1.resources
+C:\Users\Cegledi_Zente_Hollo\Desktop\shared\dev\csharp\orai\memoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.Game.resources
+C:\Users\Cegledi_Zente_Hollo\Desktop\shared\dev\csharp\orai\memoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.Properties.Resources.resources
+C:\Users\Cegledi_Zente_Hollo\Desktop\shared\dev\csharp\orai\memoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.Settings.resources
+C:\Users\Cegledi_Zente_Hollo\Desktop\shared\dev\csharp\orai\memoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.csproj.GenerateResource.cache
+C:\Users\Cegledi_Zente_Hollo\Desktop\shared\dev\csharp\orai\memoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.csproj.CoreCompileInputs.cache
+C:\Users\Cegledi_Zente_Hollo\Desktop\shared\dev\csharp\orai\memoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.exe
+C:\Users\Cegledi_Zente_Hollo\Desktop\shared\dev\csharp\orai\memoriaJatek\memoriaJatek\obj\Debug\memoriaJatek.pdb

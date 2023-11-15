@@ -78,6 +78,7 @@ namespace memoriaJatek
                     }              
                 }
             }
+            felforditOsszes();
         }
 
         public void labelElhelyezes(int min, int max)
@@ -96,6 +97,7 @@ namespace memoriaJatek
             labelKeszit(randomPozicioIndex, randomSzam);
 
             marGeneraltSzamok.Add(randomSzam);
+
         }
 
         public void labelKeszit(int randomPozicioIndex, int randomSzam)
@@ -148,6 +150,28 @@ namespace memoriaJatek
             
         }
 
+        public void felforditOsszes()
+        {
+            timer2.Interval = 1000 * masodpercekSzama;
+            timer2.Start();            
+            for (int i = 0; i < parokSzama * 2; i++)
+            {
+                Kartyak[i].ForeColor = Color.Black;
+                Kartyak[i].BackColor = Color.Lavender;
+            }
+                
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            for (int i = 0; i < parokSzama * 2; i++)
+            {
+                Kartyak[i].ForeColor = Color.Purple;
+                Kartyak[i].BackColor = Color.Purple;
+            }
+            timer2.Stop();
+        }
+
 
         public void ablakMeretBeallit(int kartyaSzam)
         {
@@ -172,7 +196,7 @@ namespace memoriaJatek
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (sw.Elapsed.Seconds == masodpercekSzama)
+            if (sw.Elapsed.Seconds == 1)
             {
                 sw.Reset();
 
@@ -188,6 +212,5 @@ namespace memoriaJatek
                 }
             }
         }
-
     }
 }
