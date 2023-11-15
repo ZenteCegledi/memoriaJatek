@@ -51,7 +51,7 @@ namespace memoriaJatek
             {
                 if (masodperc5.Checked == true)
                 {
-                    return 5;
+                    return 1;
                 }
                 else if (masodperc10.Checked == true)
                 {

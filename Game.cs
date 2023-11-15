@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,9 @@ namespace memoriaJatek
         int tmpX = 50;
         int tmpY = 50;
         List<int> marGeneraltSzamok = new List<int>();
+        List<Label> Kartyak = new List<Label>();
+        List<Label> forditottKartyak = new List<Label>();
+        Stopwatch sw = new Stopwatch();
 
         public Game()
         {
@@ -106,6 +110,8 @@ namespace memoriaJatek
             label.Text = randomSzam.ToString();
             label.Location = poziciok[randomPozicioIndex];
 
+            Kartyak.Add(label);
+
             poziciok.RemoveAt(randomPozicioIndex);
             Controls.Add(label);
             kartyaSzam--;
@@ -114,14 +120,73 @@ namespace memoriaJatek
         public void Fordit(object sender, EventArgs e)
         {
             Label label = (Label)sender;
-            label.ForeColor = Color.Black;
-            label.BackColor = Color.Lavender;
+            if (fordithatoE() < 1)
+            {
+                forditottKartyak.Add(label);
+                label.ForeColor = Color.Black;
+                label.BackColor = Color.Lavender;
+            }
+            else if (fordithatoE() == 1)
+            {
+                forditottKartyak.Add(label);
+                label.ForeColor = Color.Black;
+                label.BackColor = Color.Lavender;
+                sw.Start();
+            }
+
+            if (forditottKartyak.Count == 2)
+            {
+                if (forditottKartyak[0].Text == forditottKartyak[1].Text)
+                {
+                    forditottKartyak[0].BackColor = Color.Green;
+                    forditottKartyak[1].BackColor = Color.Green;
+                    forditottKartyak[0].Enabled = false;
+                    forditottKartyak[1].Enabled = false;
+                }
+                forditottKartyak.Clear();
+            }
+            
         }
 
 
         public void ablakMeretBeallit(int kartyaSzam)
         {
             this.Size = new Size(kartyaSzam / 3 * 100 + 100, 500);
+        }
+
+        private int fordithatoE()
+        {
+            int forditottKartyaSzama = 0;
+
+            for(int i = 0; i < Kartyak.Count; i++)
+            {
+                if (Kartyak[i].BackColor == Color.Lavender)
+                {
+                    forditottKartyaSzama++;
+                }
+            }
+
+            return forditottKartyaSzama;
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (sw.Elapsed.Seconds == masodpercekSzama)
+            {
+                sw.Reset();
+
+                for (int i = 0; i < Kartyak.Count; i++)
+                {
+                        if (Kartyak[i].BackColor == Color.Lavender)
+                        {
+                            Kartyak[i].BackColor = Color.Purple;
+                            Kartyak[i].ForeColor = Color.Purple;
+                        }
+
+
+                }
+            }
         }
 
     }
