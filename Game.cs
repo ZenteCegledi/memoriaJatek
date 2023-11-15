@@ -141,12 +141,12 @@ namespace memoriaJatek
             {
                 if (forditottKartyak[0].Text == forditottKartyak[1].Text)
                 {
+                    sw.Stop();
                     forditottKartyak[0].BackColor = Color.Green;
                     forditottKartyak[1].BackColor = Color.Green;
                     forditottKartyak[0].Enabled = false;
                     forditottKartyak[1].Enabled = false;
                     zoldekSzama++;
-                    sw.Restart();
                     if (zoldekSzama == parokSzama)
                     {
                         MessageBox.Show("Gratulálunk!\nSikeresen végig játszottad a játékot!");
