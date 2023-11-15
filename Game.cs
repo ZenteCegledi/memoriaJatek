@@ -127,6 +127,15 @@ namespace memoriaJatek
             {
                 probaLabel.ForeColor = Color.Red;
                 MessageBox.Show("Elfogytak a lehetőségeid!\nA megtalált párok száma: " + (parokSzama - zoldekSzama));
+                for (int i = 0; i < parokSzama * 2; i++)
+                {
+                    if (Kartyak[i].BackColor != Color.Green)
+                    {
+                        Kartyak[i].ForeColor = Color.Black;
+                        Kartyak[i].BackColor = Color.OrangeRed;
+                        Kartyak[i].Enabled = false;
+                    }
+                }
             }
         }
 
@@ -173,6 +182,8 @@ namespace memoriaJatek
                     sw.Stop();
                     forditottKartyak[0].BackColor = Color.Green;
                     forditottKartyak[1].BackColor = Color.Green;
+                    forditottKartyak[0].ForeColor = Color.White;
+                    forditottKartyak[1].ForeColor = Color.White;
                     forditottKartyak[0].Enabled = false;
                     forditottKartyak[1].Enabled = false;
                     zoldekSzama++;
