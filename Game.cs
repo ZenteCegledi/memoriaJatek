@@ -166,12 +166,14 @@ namespace memoriaJatek
                 forditottKartyak.Add(label);
                 label.ForeColor = Color.Black;
                 label.BackColor = Color.Lavender;
+                label.Click -= new EventHandler(Fordit);
             }
             else if (fordithatoE() == 1)
             {
                 forditottKartyak.Add(label);
                 label.ForeColor = Color.Black;
                 label.BackColor = Color.Lavender;
+                label.Click -= new EventHandler(Fordit);
                 sw.Start();
             }
 
@@ -184,8 +186,6 @@ namespace memoriaJatek
                     forditottKartyak[1].BackColor = Color.Green;
                     forditottKartyak[0].ForeColor = Color.White;
                     forditottKartyak[1].ForeColor = Color.White;
-                    forditottKartyak[0].Enabled = false;
-                    forditottKartyak[1].Enabled = false;
                     zoldekSzama++;
                     if (zoldekSzama == parokSzama)
                     {
@@ -254,6 +254,8 @@ namespace memoriaJatek
                         {
                             Kartyak[i].BackColor = Color.Purple;
                             Kartyak[i].ForeColor = Color.Purple;
+                            Kartyak[i].Click += new EventHandler(Fordit);
+
                         }
 
 
