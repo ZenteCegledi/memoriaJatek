@@ -126,7 +126,7 @@ namespace memoriaJatek
             if (probalkozasokSzama == 0 && zoldekSzama != parokSzama)
             {
                 probaLabel.ForeColor = Color.Red;
-                MessageBox.Show("Elfogytak a lehetőségeid!\nA megtalált párok száma: " + (parokSzama - zoldekSzama));
+                MessageBox.Show("Elfogytak a lehetőségeid!\nA megtalált párok száma: " + (zoldekSzama));
                 for (int i = 0; i < parokSzama * 2; i++)
                 {
                     if (Kartyak[i].BackColor != Color.Green)
