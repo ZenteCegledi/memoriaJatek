@@ -145,7 +145,7 @@ namespace memoriaJatek
             label.Click += new EventHandler(Fordit);
             label.BackColor = Color.Purple;
             label.Size = new Size(80, 80);
-            label.Font = new Font("Arial", 20);
+            label.Font = new Font("Arial", 32);
             label.TextAlign = ContentAlignment.MiddleCenter;
             label.ForeColor = Color.Purple;
             label.Text = randomSzam.ToString();
